@@ -20,7 +20,7 @@ from task.views import GenerateRandomUserView, UsersListView, UserDeleteAll
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('users/', UsersListView.as_view(), name='users_list'),
+    path('', UsersListView.as_view(), name='users_list'),
     path('generate/', GenerateRandomUserView.as_view(), name='generate'),
     path('users-delete/', UserDeleteAll, name='users_delete'),
 ]
